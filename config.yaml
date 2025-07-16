@@ -1,0 +1,20 @@
+Dataset: "../../../scratch/hb-LungModeling/Jeremi/*"
+
+type: "None"
+
+lr:
+  - 1.0e-4
+  - 1.0e-3
+
+batch_size:
+  - 8
+
+dropout:
+  - 0.15
+  - 0.35
+
+hu:
+  - [40, 600]
+
+splits: 5
+n_trials: 20
