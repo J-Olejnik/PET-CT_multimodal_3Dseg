@@ -24,20 +24,22 @@ This repository contains the implementation of a deep learning framework for aut
 | n = 30 | 0.34 ± 0.06 | 0.91 ± 0.03 | 3.82 ± 1.47 | 3.45 ± 2.50 | 3.24 ± 2.37
 | ITK-Elastix |
 | n = 30 | 0.44 ± 0.06 | 0.94 ± 0.02 | 2.88 ± 1.31 | 1.68 ± 1.25 | 0.94 ± 0.62
-| n = 689 | 0.45 ± 0.10 | 0.93 ± 0.09 | 3.70 ± 1.50 | 1.92 ± 1.35 | 1.38 ± 0.73  
-###
+| n = 689 | 0.45 ± 0.10 | 0.93 ± 0.09 | 3.70 ± 1.50 | 1.92 ± 1.35 | 1.38 ± 0.73
+###### *HD95, TRE_L and TRE_R are reported in mm
 
 ### Model training
-|| Model | DSC | SurfDSC | HD95 (mm) | Precision | Recall |
+|| Model | DSC | SurfDSC | HD95 | Precision | Recall |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | **Validation**|
 || CT-only | 0.52 ± 0.03 | 0.50 ± 0.03 | 45.72 | 0.67 ± 0.03 | 0.55 ± 0.04 |
 || **PET-CT** | **0.65 ± 0.01** | **0.63 ± 0.01** | **26.33** | **0.74 ± 0.03** | **0.66 ± 0.03** |    
 | **Test**|
 || CT-only | 0.34 ± 0.05 | 0.29 ± 0.04 | 88.08 | 0.32 ± 0.05 | 0.45 ± 0.06 |
-|| **PET-CT** | **0.64 ± 0.01** | **0.60 ± 0.01** | **23.07** | **0.69 ± 0.01** | **0.66 ± 0.02** |  
+|| **PET-CT** | **0.64 ± 0.01** | **0.60 ± 0.01** | **23.07** | **0.69 ± 0.01** | **0.66 ± 0.02** |
+###### *HD95 is reported as a median in mm  
 ###
 ![Screenshot](./README.png)
+###### *Label - gray mask, model prediction - green contour  
 
 ### Achievements
 
@@ -54,4 +56,5 @@ This repository contains the implementation of a deep learning framework for aut
 Torch 2.5.1  
 MONAI 1.3.0  
 Optuna 4.2.1  
-scikit-image 0.25.0
+scikit-image 0.25.0  
+ITK-Elastix 5.4.5
